@@ -10,16 +10,11 @@
 <config>
     <modules>
         <TheExtensionLab_StatusColors>
-            <version>1.0.1</version>
+            <version>1.3.0</version>
         </TheExtensionLab_StatusColors>
     </modules>
 
     <global>
-        <blocks>
-            <theextensionlab_statuscolors>
-                <class>TheExtensionLab_StatusColors_Block</class>
-            </theextensionlab_statuscolors>
-        </blocks>
 
         <helpers>
             <theextensionlab_statuscolors>
@@ -75,17 +70,16 @@
                     </theextensionlab_statuscolors>
                 </observers>
             </core_block_abstract_to_html_after>
-
-            <controller_action_predispatch_adminhtml_system_config_edit>
-                <observers>
-                    <theextensionlab_statuscolors>
-                        <class>TheExtensionLab_StatusColors_Model_Observer</class>
-                        <method>controllerActionPredispatchAdminhtmlSystemConfigEdit</method>
-                    </theextensionlab_statuscolors>
-                </observers>
-            </controller_action_predispatch_adminhtml_system_config_edit>
         </events>
     </adminhtml>
+
+    <default>
+        <admin>
+            <order_grid>
+                <default_status_color>#EAEAEA</default_status_color>
+            </order_grid>
+        </admin>
+    </default>
 
     <phpunit>
         <suite>
