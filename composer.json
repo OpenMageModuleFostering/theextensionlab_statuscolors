@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/TheExtensionLab_StatusColors",
+    "name": "OpenMageModuleFostering\/TheExtensionLab_StatusColors",
     "type": "magento-module",
     "license": "Open-Software-License-v3.0-(OSL-3.0)",
     "homepage": "",
     "description": "An extension to add colors to your Magento Order grid to enable to you to see the status of orders in a glance.",
     "authors": [
-    {
-        "name": "James Anelay",
-        "email": "james@theextensionlab.com"
-    }
-],
+        {
+            "name": "James Anelay",
+            "email": "james@theextensionlab.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
